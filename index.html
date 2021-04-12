@@ -14,9 +14,11 @@
                                 <li><a href="#04/09/2021">04/09/2021</a></li>
                                 <li><a href="#04/10/2021">04/10/2021</a></li>
                                 <li><a href="#04/11/2021">04/11/2021</a></li>
+                                <li><a href="#Forms">Let's Create a Journal Entry</a></li>
                         </ul>
                 </nav>
             </header>
+
             <main>
                     <strong>Play this while reading my journals :)</strong>
                     <audio controls>
@@ -24,22 +26,24 @@
                     </audio>
                     <hr>
                     <h1 id="04/09/2021">04/09/2021</h1>
+                    <h2>List of Highlights and Lowlights</h2>
                     <section>
-                            <h2>List of Highlights and Lowlights</h2>
-                            <h3>Highlights</h3>
-                            <ol>
-                                <li>I had my first Fall Guys crown</li> 
-                                <li>Went to <span style="color:rgb(73, 139, 201);">Beach</span></li>
-                                <li>Got roasted beef from Costco</li>
-                            </ol>
-                            <img src="fall.png" alt="First Corwn!!" width="500" height="300">
-
-                            <h3>Lowlights</h3>
-                            <ol>
-                                    <li>Didn't buy <span style="color:rgb(228, 201, 68)">Cheese Danish</span> for tomorrow's breakfast</li>
-                                    <li>Costco doesn't sell chicken until <strong>4/22</strong>!! </li>
-                            </ol>
+                        <h3>Highlights</h3>
+                        <ol>
+                            <li>I had my first Fall Guys crown</li> 
+                            <li>Went to <span style="color:rgb(73, 139, 201);">Beach</span></li>
+                            <li>Got roasted beef from Costco</li>
+                        </ol>
+                        <img src="fall.png" alt="First Corwn!!" width="500" height="300">
                     </section>
+
+                    <section>
+                        <h3>Lowlights</h3>
+                        <ol>
+                                <li>Didn't buy <span style="color:rgb(228, 201, 68)">Cheese Danish</span> for tomorrow's breakfast</li>
+                                <li>Costco doesn't sell chicken until <strong>4/22</strong>!! </li>
+                        </ol>
+                    </section>                        
                     <hr>
                     <h1 id="04/10/2021">04/10/2021</h1>
                     <details>
@@ -60,12 +64,75 @@
                     <p>Today is time for work again...</p>
                     <p>I want to share a video just for fun!</p>
 
+
                     <video width="600" height="300" controls>
                         <source src="maka.mp4" type="video/mp4">
                     </video>
+                    <p><em>credit to: <a href="https://www.bilibili.com/video/BV1Cb4y1Q71R/?spm_id_from=autoNext">bilibili TØm</a></em></p>
+                    <hr>
 
+                    <h1 id="Forms">Create a Journal Entry</h1>
+                    <form action = "#">
+                            <fieldset>
+                                    <legend>To create a journal: </legend>
+                                    <label for="name"> Your Name: </label>
+                                    <input type="text" id="name" name="name" required><br>
+                                    <br>
+                                    <label for="today"> Today's Date: </label>
+                                    <input type="date" id="today" name="today"><br>
+
+                                    <p> Where are you? </p> 
+                                    <input type="radio" id="sd" name="loc" value="SD">
+                                    <label for="sd"> SD </label><br>
+                                    <input type="radio" id="ca" name="loc" value="CA">
+                                    <label for="ca"> CA </label><br>
+                                    <input type="radio" id="us" name="loc" value="US">
+                                    <label for="us"> US </label><br>
+                                    <input type="radio" id="int" name="loc" value="International">
+                                    <label for="int"> International </label>
+                                    <br><br>
+
+                                    <label for="weather">Choose a weather:</label>
+                                    <select id="weather">
+                                            <option value="sunny">Sunny</option>
+                                            <option value="rainy">Rainy</option>
+                                            <option value="windy">Windy</option>
+                                            <option value="snowy">Snowy</option>
+                                            <option value="cloudy">Cloudy</option>
+                                    </select>
+                                    <br><br>
+
+                                    <label for="color">Choose your favorite color:</label>
+                                    <input list="colors" name="color" id="color">
+                                    <datalist id="colors">
+                                        <option value="Pink">Pink</option>
+                                        <option value="Black">Black</option>
+                                        <option value="Dark green">Dark green</option>
+                                    </datalist>
+                                    <br><br>
+
+                                    <label for="mode">Mode Today?</label>
+                                    <input type="checkbox" id="way1" name="way1" value="Happy">
+                                    <label for="way1"> Happy </label>
+                                    <input type="checkbox" id="way2" name="way2" value="Tired">
+                                    <label for="way2"> Tired </label>
+                                    <input type="checkbox" id="way3" name="way3" value="Ok">
+                                    <label for="way3"> Ok </label>
+                                    
+                                    <br><br>
+
+                                    <label for="reflect">Anything memorable? </label>
+                                    <textarea id="reflect" name="reflect"></textarea>
+                                    <br><br>
+                                    <button type="create"> create </button>
+                                </fieldset>
+                    </form>
             </main>
-            
-            <strong>Please give me a like!</strong>
+            <hr>
+            <h1>Footer</h1>
+            <footer>
+                    <p>Author: <strong>Chang</strong><br>
+                        Contact me: <strong><a href="mailto:chl017@ucsd.edu">chl017@ucsd.edu</a></strong></p>
+            </footer>
     </body>
 </html>
