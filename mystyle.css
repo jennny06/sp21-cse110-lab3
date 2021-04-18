@@ -1,0 +1,187 @@
+/* set background color */
+body {
+        background-color: #f4f4f4;
+}
+
+/* add font */
+@font-face {
+    font-family: "myFont";
+    src: url("Indie.ttf");
+  }
+
+* {
+    font-family: "myFont", "Bitstream Vera Serif", serif;
+}
+
+/* header box */
+.header {
+    width: 750px;
+    border-color: lightseagreen;
+    border-radius: 2ch;
+    border-style: dotted;
+    border-width: 1%;
+    padding-top: 5mm;
+    padding-left: 5mm;
+    padding-bottom: 5mm;
+    padding-right: 5mm;
+    margin-top: 1ch;
+    margin-bottom: 1ch;
+    margin-left: 1ch;
+    margin-right: 1ch;
+    text-align: center;
+    color:rgb(13, 105, 98);
+}
+
+.navclass{
+    font-size: 7mm;
+    border-style:double;
+    border-width:1%;
+    padding: 2ch 2ch 2ch 2ch;
+    border-color: rgb(56, 202, 141);
+    text-align:left;
+    margin: 5mm 5mm 5mm 5mm;
+    min-width: 100px;
+    min-height: 100px;
+}
+
+/* set font size for paragraphs and list items */
+p, details {
+    font-size: 6mm;
+}
+
+h1 {
+    color: rgb(119, 175, 168);
+    font-size: 10mm;
+}
+
+h2 {
+    color:lightpink;
+    font-size: 8mm;
+}
+
+h3 {
+    font-size: 7mm;
+}
+
+div p {
+    color:rgb(3, 44, 41)
+
+}
+
+#para1{
+    color:darkred;
+    font-size: 1.2rem;
+    text-decoration: maroon overline ;
+}
+
+a[target=_self] {
+    color:rgb(119, 175, 168)
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+/* display inline */
+p.dp2 {
+    display: inline;
+    color: rgb(228, 201, 68);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Child Combinator */ 
+details>ol{
+    color:saddlebrown;
+}
+
+/* General sibling combinator */
+legend ~ div{
+    color:teal;
+    font-size: 5mm;
+}
+
+/* sticky welcoming sentence */
+div.sticky {
+    position: sticky;
+    top:0;
+    right:0;
+    padding: 5px;
+    background-color: #ddf0dd;
+    border: 2px dashed #c1d8a6;
+    margin:auto;
+    text-align: center;
+    font-size:6mm;
+    height:auto;
+}
+
+/* set fixed return to top */
+div.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    background-color: hsl(102, 48%, 89%);
+    border: 1px dashed #c1d8a6;    
+    text-align: center;
+    margin:auto;
+}
+
+/* adjust header with flex */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 15px;
+    justify-content: space-evenly;
+}
+
+.grid-item1 {
+    grid-column: 1/5;
+}
+
+.grid-item2 {
+    grid-column: 1/5;
+}
+
+.grid-item3 {
+    grid-column: 1/5;
+}
+
+/* Adjacent sibling combinator */
+h3.high + ol {
+    font-size: 5.5mm;
+}
+
+h3.low + ol {
+    font-size: 5.5mm;
+}
+
+p.dp1{
+    max-width: 350px;
+    max-height: 10mm;
+    background-color: lightsalmon;
+}
+
+@media screen and (max-width: 1000px) {
+    p.dp1 {
+      display: none;
+    }
+}
+
+video{
+    width: 80%;
+    height:80%;
+}
