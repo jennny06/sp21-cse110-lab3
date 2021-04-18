@@ -5,30 +5,46 @@
         <meta name="description" content="Journal entries for three days">
         <title>My Journals</title>
         <link rel="icon" href="favicon.png">
+        <link rel="stylesheet" href="mystyle.css">
     </head>
     <body>
             <header>
-                <div><b>ALL Journal Entries</b></div>
-                <nav>
-                        <ul>
-                                <li><a href="#04/09/2021">04/09/2021</a></li>
-                                <li><a href="#04/10/2021">04/10/2021</a></li>
-                                <li><a href="#04/11/2021">04/11/2021</a></li>
-                                <li><a href="#Forms">Let's Create a Journal Entry</a></li>
+                <a id="top"></a>
+                <div class="flex-container">
+                <div class="header"><h1><b>ALL Journal Entries</b></h1>
+                <div>
+                    <nav>
+                        <ul class="navclass">
+                                <li><a href="#04/09/2021" target="_self">04/09/2021</a></li>
+                                <li><a href="#04/10/2021" target="_self">04/10/2021</a></li>
+                                <li><a href="#04/11/2021" target="_self">04/11/2021</a></li>
+                                <li><a href="#Forms" target="_self">Let's Create a Journal Entry</a></li>
                         </ul>
-                </nav>
+                    </nav>
+                </div>
+
+                <div>
+                    <strong id="para1">Play this while reading my journals :)</strong>
+                    <audio controls>
+                        <source src="lazy.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+
+                </div>
+                </div>
+
+                <div class="fixed">
+                    <a href="#top" target="_self">Back to top</a>
+                </div>
             </header>
 
             <main>
-                    <strong>Play this while reading my journals :)</strong>
-                    <audio controls>
-                            <source src="lazy.mp3" type="audio/mpeg">
-                    </audio>
+                    <div class="sticky">Welcome!</div>
                     <hr>
                     <h1 id="04/09/2021">04/09/2021</h1>
                     <h2>List of Highlights and Lowlights</h2>
                     <section>
-                        <h3>Highlights</h3>
+                        <h3 class="high">Highlights</h3>
                         <ol>
                             <li>I had my first Fall Guys crown</li> 
                             <li>Went to <span style="color:rgb(73, 139, 201);">Beach</span></li>
@@ -38,9 +54,9 @@
                     </section>
 
                     <section>
-                        <h3>Lowlights</h3>
+                        <h3 class="low">Lowlights</h3>
                         <ol>
-                                <li>Didn't buy <span style="color:rgb(228, 201, 68)">Cheese Danish</span> for tomorrow's breakfast</li>
+                                <li>Didn't buy <p class="dp2">Cheese Danish</p> for tomorrow's breakfast</li>
                                 <li>Costco doesn't sell chicken until <strong>4/22</strong>!! </li>
                         </ol>
                     </section>                        
@@ -55,79 +71,103 @@
                         </ol>
                       </details>
                 
+                    <div>
                     <p>
-                        I learned something new about HTML. <br> <b>i</b> is used for something that is typically italic like <i>homo sapiens</i>.<br>And <b>em</b> is usually used to emphasize something, like I want BOBA <em>right now</em>!
+                        I learned something new about HTML.
+                        <p class="dp1"> Congrats, you find me! </p> 
+                        <p><b>i</b> is used for something that is typically italic like <i>homo sapiens</i>.
+                        <br>And <b>em</b> is usually used to emphasize something, like I want BOBA <em>right now</em>!</p>
                     </p> 
                     <p>And here is just <b>a ramdom text that doesn't have important meaning</b>.</p>
                     <hr>
                     <h1 id="04/11/2021">04/11/2021</h1>
                     <p>Today is time for work again...</p>
                     <p>I want to share a video just for fun!</p>
+                    </div>
 
 
-                    <video width="600" height="300" controls>
+                    <video controls>
                         <source src="maka.mp4" type="video/mp4">
                     </video>
-                    <p><em>credit to: <a href="https://www.bilibili.com/video/BV1Cb4y1Q71R/?spm_id_from=autoNext">bilibili TØm</a></em></p>
+                    <p><em>credit to: <a href="https://www.bilibili.com/video/BV1Cb4y1Q71R/?spm_id_from=autoNext" target="_blank">bilibili TØm</a></em></p>
                     <hr>
 
                     <h1 id="Forms">Create a Journal Entry</h1>
-                    <form action = "#">
+                        <form action = "#">
                             <fieldset>
-                                    <legend>To create a journal: </legend>
-                                    <label for="name"> Your Name: </label>
-                                    <input type="text" id="name" name="name" required><br>
+                                <legend>To create a journal: </legend>
+                                <div class="grid-container">
+                                    <div class="grid-item1"><label for="name"> Your Name: </label>
+                                        <input type="text" id="name" name="name" required><br></div>
                                     <br>
-                                    <label for="today"> Today's Date: </label>
-                                    <input type="date" id="today" name="today"><br>
-
-                                    <p> Where are you? </p> 
-                                    <input type="radio" id="sd" name="loc" value="SD">
-                                    <label for="sd"> SD </label><br>
-                                    <input type="radio" id="ca" name="loc" value="CA">
-                                    <label for="ca"> CA </label><br>
-                                    <input type="radio" id="us" name="loc" value="US">
-                                    <label for="us"> US </label><br>
-                                    <input type="radio" id="int" name="loc" value="International">
-                                    <label for="int"> International </label>
-                                    <br><br>
-
-                                    <label for="weather">Choose a weather:</label>
-                                    <select id="weather">
+                                    <div class="grid-item2"><label for="today"> Today's Date: </label>
+                                        <input type="date" id="today" name="today"><br><br>
+                                    </div>
+                                    
+                                    <div>
+                                        <label for="loc"> Where are you? </label> <br>
+                                        <input type="radio" id="sd" name="loc" value="SD">
+                                        <label for="sd"> SD </label><br>
+                                        <input type="radio" id="ca" name="loc" value="CA">
+                                        <label for="ca"> CA </label><br>
+                                        <input type="radio" id="us" name="loc" value="US">
+                                        <label for="us"> US </label><br>
+                                        <input type="radio" id="int" name="loc" value="International">
+                                        <label for="int"> International </label>
+                                        <br><br>
+                                    </div>
+                                    
+                                    <div>
+                                        <label for="weather">Choose a weather:</label>
+                                        <select id="weather">
                                             <option value="sunny">Sunny</option>
                                             <option value="rainy">Rainy</option>
                                             <option value="windy">Windy</option>
                                             <option value="snowy">Snowy</option>
                                             <option value="cloudy">Cloudy</option>
-                                    </select>
-                                    <br><br>
-
-                                    <label for="color">Choose your favorite color:</label>
-                                    <input list="colors" name="color" id="color">
-                                    <datalist id="colors">
-                                        <option value="Pink">Pink</option>
-                                        <option value="Black">Black</option>
-                                        <option value="Dark green">Dark green</option>
-                                    </datalist>
+                                        </select>
+                                        <br><br>
+                                    </div>
+                                    
+                                    <div>
+                                        <label for="color">Choose your favorite color:</label>
+                                        <input list="colors" name="color" id="color">
+                                        <datalist id="colors">
+                                            <option value="Pink">Pink</option>
+                                            <option value="Black">Black</option>
+                                            <option value="Dark green">Dark green</option>
+                                        </datalist>
                                     <br>
-                                    <p>Mood Today?
-                                    <input type="checkbox" id="mood1" name="mood" value="Happy">
-                                    <label for="mood1"> Happy </label>
-                                    <input type="checkbox" id="mood2" name="mood" value="Tired">
-                                    <label for="mood2"> Tired </label>
-                                    <input type="checkbox" id="mood3" name="mood" value="Ok">
-                                    <label for="mood3"> Ok </label>
-                                    </p>
-
-                                    <label for="reflect">Anything memorable? </label>
-                                    <textarea id="reflect" name="reflect"></textarea>
-                                    <br><br>
-                                    <button type="submit"> create </button>
+                                    </div>
+                                    
+                                    <div>
+                                        <label for="mood">Mood:</label><br>
+                                        <input type="checkbox" id="mood1" name="mood" value="Happy">
+                                        <label for="mood1"> Happy </label>
+                                        <input type="checkbox" id="mood2" name="mood" value="Tired">
+                                        <label for="mood2"> Tired </label>
+                                        <input type="checkbox" id="mood3" name="mood" value="Ok">
+                                        <label for="mood3"> Ok </label>
+                                        </p>  
+                                    </div>
+                               
+                                    <div>
+                                        <label for="reflect">Anything memorable? </label>
+                                        <textarea id="reflect" name="reflect"></textarea>
+                                        <br><br>
+                                    </div>
+                                    
+                                    <div class="grid-item3"><button type="submit"> create </button></div>
+                                </div>
+                                
                                 </fieldset>
                     </form>
+                    
+             
             </main>
             <hr>
             <h1>Footer</h1>
+
             <footer>
                     <p>Author: <strong>Chang</strong><br>
                         Contact me: <strong><a href="mailto:chl017@ucsd.edu">chl017@ucsd.edu</a></strong></p>
